@@ -1,6 +1,7 @@
 # Derivatives Risk Lab
 
 **Interactive 3D Greeks with a financial story: what a delta hedge fixes, and what it leaves exposed.**
+[🚀 Open the interactive demo](https://derivatives-risk-lab-joan.streamlit.app)
 
 A Python options workbench for finance and risk interviews. Rotate a Greek surface, inspect signed portfolio exposures, apply market shocks and explain why a locally delta-neutral portfolio can still lose money.
 
