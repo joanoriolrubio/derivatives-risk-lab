@@ -43,18 +43,6 @@ A core-only `pip install .` has no third-party runtime dependencies. The self-co
 
 The analytics engine is implemented from scratch using Python's standard library. SciPy appears only in tests to cross-check the normal distribution. Streamlit, Plotly and pandas power the interface. The tree benchmark uses a different valuation mechanism, but is still project code; this is not a QuantLib or market-price certification.
 
-## A two-minute interview demo
-
-1. Start on **3D Greeks / Gamma**. Rotate the surface and explain the near-strike concentration close to expiry.
-2. Switch to **Vega**. Explain why an underlying-stock hedge cannot remove volatility exposure.
-3. Open **Portfolio & hedge**. The default is short 50 calls and 50 puts, each with multiplier 100.
-4. Show the initial stock hedge and the curved post-hedge P&L profile.
-5. Open **P&L explain**. Compare exact repricing, the Greek approximation and the residual.
-6. Point out that the post-shock delta is no longer zero: this is a static hedge, not continuous rebalancing.
-7. Open **IV & validation** and compare the analytic price with the independent tree.
-
-See [interview questions](docs/INTERVIEW.md) for a concise explanation of the model's limitations and the role of each portfolio project.
-
 ## Python API
 
 ```python
