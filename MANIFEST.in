@@ -1,0 +1,6 @@
+include app.py requirements.txt LICENSE
+recursive-include docs *.md *.png *.html *.json *.txt
+recursive-include .streamlit *.toml
+recursive-include .github *.yml
+
+recursive-include scripts *.py

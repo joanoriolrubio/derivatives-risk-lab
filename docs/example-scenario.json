@@ -1,0 +1,28 @@
+{
+  "market": "synthetic",
+  "units": "EUR, calendar days, annual decimal rates",
+  "scope": "Mark-to-market P&L before financing and dividends",
+  "scenario": {
+    "spot_return": 0.05,
+    "vol_points": 3.0,
+    "rate_bp": 0.0,
+    "days": 1.0
+  },
+  "result": {
+    "initial_value": -39567.13607177505,
+    "final_value": -51775.75692988752,
+    "exact_pnl": -12208.620858112467,
+    "delta_pnl": -2469.9067920052175,
+    "gamma_pnl": -4982.746737580315,
+    "vega_pnl": -5897.387919547113,
+    "theta_pnl": 219.22980217626008,
+    "rho_pnl": -0.0,
+    "approximation": -13130.811646956385,
+    "residual": 922.1907888439182,
+    "hedge_shares": 493.9813584010435,
+    "stock_pnl": 2469.9067920052175,
+    "hedge_cost": 4.939813584010436,
+    "hedged_pnl": -9743.65387969126,
+    "remaining_delta": 0.0
+  }
+}
