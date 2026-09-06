@@ -3,7 +3,7 @@
 **Interactive 3D Greeks with a financial story: what a delta hedge fixes, and what it leaves exposed.**
 [🚀 Open the interactive demo](https://derivatives-risk-lab-joan.streamlit.app)
 
-A Python options workbench for finance and risk interviews. Rotate a Greek surface, inspect signed portfolio exposures, apply market shocks and explain why a locally delta-neutral portfolio can still lose money.
+A Python options workbench for interactive pricing and nonlinear risk analysis. Rotate a Greek surface, inspect signed portfolio exposures, apply market shocks and examine why a locally delta-neutral portfolio can still lose money.
 
 ![Gamma surface generated from the model](docs/preview.png)
 
@@ -90,8 +90,7 @@ src/derivatives_lab/
   portfolio.py                  Aggregated exposure, scenarios and static hedge
   demo.py                       Portfolio presets and installed JSON CLI
  tests/                         Financial, solver, portfolio and interface checks
- docs/                          Methodology, interview guide and interactive surface
- .github/workflows/ci.yml        Python 3.11 / 3.12 / 3.13 quality checks
+ docs/                          Methodology, validation notes and interactive surface
 ```
 
 ## Validate
@@ -104,33 +103,7 @@ pytest
 python -m build
 ```
 
-Tests include negative rates, nonzero dividends, near-expiry options, signed positions, solver failures and UI changes. A 95% coverage gate applies to the analytics package; it does not claim branch coverage or coverage of all interface paths. [Local validation notes](docs/VALIDATION.md) record the observed results. GitHub Actions has been configured; remote CI runs after publication.
-
-## How to position the three projects
-
-1. **P&L Control & Explain — lead project for this vacancy.** Daily control, investigation, management reporting and operational traceability.
-2. **Derivatives Risk Lab — visual derivatives demonstration.** Options knowledge, nonlinear exposure and the limits of hedging.
-3. **Fixed Income Analytics — underlying quantitative foundation.** Bond valuation, bootstrapping and interest-rate sensitivities.
-
-Together they demonstrate complementary skills. They do not constitute a total-balance-sheet profitability platform, and a portfolio does not substitute for professional experience.
-
-## Publish
-
-Create an empty `derivatives-risk-lab` GitHub repository, then:
-
-```bash
-git init -b main
-git add .
-git commit -m "Build European options and 3D Greeks risk lab"
-git remote add origin https://github.com/YOUR_USERNAME/derivatives-risk-lab.git
-git push -u origin main
-```
-
-Suggested description: “European option pricing, 3D Greeks, portfolio P&L attribution and static delta-hedge analysis in Python and Streamlit.”
-
-Suggested topics: `python`, `derivatives`, `options`, `greeks`, `risk-management`, `plotly`, `streamlit`.
-
-For a hosted Streamlit demo, select `app.py`, Python 3.12 and the root requirements file. No credentials are required. Publication/hosting has not been performed as part of this local deliverable.
+Tests include negative rates, nonzero dividends, near-expiry options, signed positions, solver failures and UI changes. A 95% coverage gate applies to the analytics package; it does not claim branch coverage or coverage of all interface paths. [Local validation notes](docs/VALIDATION.md) record the observed results.
 
 ## Model boundaries
 
