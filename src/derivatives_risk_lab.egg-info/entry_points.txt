@@ -1,2 +1,0 @@
-[console_scripts]
-derivatives-demo = derivatives_lab.demo:main

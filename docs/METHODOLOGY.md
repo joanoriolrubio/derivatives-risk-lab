@@ -36,7 +36,7 @@ Approximation = Δ ΔS + ½ Γ (ΔS)² + Vega Δσ + Theta Δt + Rho Δr.
 
 All derivatives are evaluated at inception. Δt is positive elapsed time in years. The residual is exact repricing minus this approximation. It contains higher-order terms, vanna/volga and other mixed effects, as well as finite-horizon effects. It is not a bad-input control residual.
 
-The standalone P&L Control project uses exact sequential factor revaluation plus an observed/model mark residual. These are intentionally different questions and should not be confused in an interview.
+The standalone P&L Control project uses exact sequential factor revaluation plus an observed/model mark residual. They answer different risk questions and should be interpreted separately.
 
 ## Static hedge
 
